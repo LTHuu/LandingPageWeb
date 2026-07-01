@@ -1,0 +1,6 @@
+@LandingPageWeb_backend_HostAddress = http://localhost:5200
+
+GET {{LandingPageWeb_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
