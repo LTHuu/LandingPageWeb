@@ -3,12 +3,12 @@
 
     margin-top: 100px;
     padding-top: 60px;
-
     background: linear-gradient(
         180deg,
-        #ecfeff,
-        #dff8f7
+        #0f766e,
+        rgb(63, 104, 102)
     );
+    color: white;
 
     border-top: 1px solid #d9eeee;
 }
@@ -47,13 +47,13 @@
 
     margin-bottom: 20px;
 
-    color: #134e4a;
+    color: white;
 }
 
 /* text */
 .footerText{
     line-height: 1.8;
-    color: #64748b;
+    color: white;
     max-width: 300px;
 }
 
@@ -69,7 +69,7 @@
 
 .footerLinks a{
     text-decoration: none;
-    color: #64748b;
+    color: white;
 
     transition: 0.25s;
 }
@@ -113,7 +113,7 @@
 
     border-top: 1px solid #dbe7e7;
 
-    color: #64748b;
+    color: white;
 }
 
 
@@ -122,7 +122,9 @@
 /* ===================== */
 
 @media (max-width: 900px){
-
+    .footer{
+        padding: 20px;
+    }
     .footerContainer{
         flex-direction: column;
         gap: 40px;
@@ -145,7 +147,7 @@
 @media (max-width: 500px){
 
     .footer{
-        padding-top: 40px;
+        padding: 20px;
     }
 
     .footerLogo{

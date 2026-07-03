@@ -27,8 +27,8 @@ export default function Feature() {
     return (
         <>
         <div className="w-full flex flex-col items-center pb-10">
-            <p className="shortFeatureTitle">Chức năng nổi bật</p>
-            <div className="w-[70%] flex justify-between mt-10">
+            {/* <p className="shortFeatureTitle">Chức năng nổi bật</p> */}
+            <div className="shortFeatureMain flex justify-between mt-10">
                 <div className="shortFeature Heart" onClick={() => scrollToSection(heartRef)}>
                     <h1 className="shortIcon">❤️</h1>
                     <h2>Heart Monitoring</h2>
@@ -55,10 +55,10 @@ export default function Feature() {
                 </div>
             </div>
             <h1 className="shortFeatureTitle">Thông tin chi tiết</h1>
-        <div className="w-[50%] flex flex-col mt-10">
+        <div className="detailFeatureMain flex flex-col mt-10">
             <div>
-                <div ref={heartRef} className="detailFeature flex-row flex justify-between">
-                    <div className="detailText Left">
+                <div ref={heartRef} className="detailFeature textLeft Heart flex-row flex justify-between">
+                    <div className="detailText">
                         <h1>❤️ Heart Monitoring</h1>
                         <h1>✓ Theo dõi nhịp tim liên tục 24/7  </h1>
                         <h1>✓ Công nghệ cảm biến PPG thế hệ mới</h1>
@@ -66,14 +66,14 @@ export default function Feature() {
                         <h1>✓ Phát hiện bất thường và cảnh báo sớm</h1>
                     </div>
                     <div className="detailImg">
-                        <Image src={HeartMonitor} alt="HearMonitor" />
+                        <Image className="detailImg" src={HeartMonitor} alt="HearMonitor" />
                     </div>
                 </div>
-                <div ref={sleepRef} className="detailFeature flex-row flex justify-between">
+                <div ref={sleepRef} className="detailFeature Sleep flex-row flex justify-between">
                     <div className="detailImg">
-                        <Image src={SleepAnalys} alt="SleepAnalys" />
+                        <Image className="detailImg" src={SleepAnalys} alt="SleepAnalys" />
                     </div>
-                    <div className="detailText Right">
+                    <div className="detailText">
                         <h1>😴 Sleep Analysis</h1>
                         <h1>✓ Theo dõi chu kỳ ngủ sâu và ngủ nhẹ</h1>
                         <h1>✓ Phân tích chất lượng giấc ngủ tự động</h1>
@@ -81,8 +81,8 @@ export default function Feature() {
                         <h1>✓ Giúp bạn thức dậy với trạng thái tốt hơn</h1>
                     </div>
                 </div>
-                <div ref={tempRef} className="detailFeature flex-row flex justify-between">
-                    <div className="detailText Left">
+                <div ref={tempRef} className="detailFeature textLeft Temperature flex-row flex justify-between">
+                    <div className="detailText">
                         <h1>🌡️ Temperature Check</h1>
                         <h1>✓ Theo dõi nhiệt độ cơ thể liên tục</h1>
                         <h1>✓ Cảm biến nhiệt độ độ nhạy cao</h1>
@@ -90,14 +90,14 @@ export default function Feature() {
                         <h1>✓ Hỗ trợ theo dõi sức khỏe hằng ngày</h1>
                     </div>
                     <div className="detailImg">
-                        <Image src={Temperature} alt="Temperature" />
+                        <Image className="detailImg" src={Temperature} alt="Temperature" />
                     </div>
                 </div>
-                <div ref={gpsRef} className="detailFeature flex-row flex justify-between">
+                <div ref={gpsRef} className="detailFeature GPS flex-row flex justify-between">
                     <div className="detailImg">
-                        <Image src={GPS} alt="GPS" />
+                        <Image className="detailImg" src={GPS} alt="GPS" />
                     </div>
-                    <div className="detailText Right">
+                    <div className="detailText">
                         <h1>📍 GPS Emergency Alert</h1>
                         <h1>✓ Định vị chính xác với GPS độc lập</h1>
                         <h1>✓ Chia sẻ vị trí trực tiếp với người thân</h1>

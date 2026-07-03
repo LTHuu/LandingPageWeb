@@ -1,5 +1,13 @@
+.heroSection{
+    background-image: url("../img/heroBg.svg");
+}
 .topSection{
+    margin-top:50px;
+    padding-bottom: 30px;
     width: 70%;
+}
+.Text{
+    color: white;
 }
 .ProductInfo {
     display: flex;
@@ -8,14 +16,39 @@
     justify-content: center;
 }
 .productName{
-    font-size: 40;
-    font: bold;
+    font-size: 40px;
+    font-weight: bold;
     text-align: left;
 }
 .proShort{
     margin-left: 80px;
-    font-size: 20;
+    font-size: 20px;
     text-align: left;
+}
+.productPrice{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+}
+.oldPrice{
+    margin-right: 20px;
+    color: gray;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.newPrice{
+    font-size: 20px;
+    font-weight:700;
+    color:rgb(216, 68, 68);
+}
+.sale{
+    text-align: center;
+    color:red;
+    font-weight:bold;
 }
 .BuyButton{
     width:150px;
@@ -32,7 +65,7 @@
 .BuyButton:hover{
     width:155px;
     height:50px;
-    font: bold;
+    font-weight: bold;
     font-size: 25px;
 }
 .productRate{
@@ -53,6 +86,121 @@
 .RateStar{
     width: 80%;
 }
-.productIma{
-    background-color: white;
+.ratingText{
+    display: flex;
+}
+.ratingText p.Text{
+    color:rgb(69, 154, 50);
+}
+
+@media (max-width: 900px){
+    .topSection{
+        width: 90%;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .productName{
+        font-size: 32px;
+        text-align: center;
+    }
+    .proShort{
+        margin-left: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+    .ProductInfo{
+        align-items: center;
+        text-align: center;
+    }
+    .productRate{
+        width: 100%;
+    }
+    .TotalRate{
+        text-align: center;
+    }
+    .RatePositive{
+        text-align: center;
+    }
+    .RateStar{
+        width: 100%;
+        justify-content: center;
+    }
+    .ProductImg{
+        width: 300px !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 500px){
+    .topSection{
+        width: 95%;
+        padding-top: 30px;
+    }
+    .productName{
+        font-size: 24px;
+        text-align: center;
+    }
+    .proShort{
+        font-size: 15px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .productPrice{
+        margin-top: 10px;
+        align-items: center;
+    }
+    .price{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    .oldPrice{
+        margin-right: 0;
+    }
+    .newPrice{
+        font-size: 22px;
+    }
+    .BuyButton{
+        width: 200px;
+        height: 45px;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .BuyButton:hover{
+        width: 200px;
+        font-size: 18px;
+    }
+    .ProductInfo > div:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+    }
+    .productRate{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .TotalRate{
+        text-align: center;
+    }
+    .RatePositive{
+        text-align: center;
+    }
+    .Star{
+        font-size: 22px;
+    }
+    .RateStar{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .RateStar p{
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+    }
+    .ProductImg{
+        width: 220px !important;
+        height: auto !important;
+    }
 }

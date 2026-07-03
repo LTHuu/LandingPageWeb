@@ -2,7 +2,11 @@
     margin-top: 20px;
     font-size: 55px;
     font-weight: 600;
+    text-align: center;
     font: bold;
+}
+.shortFeatureMain{
+    width: 70vw;
 }
 .shortFeature{
     margin: 0 20px 20px;
@@ -10,6 +14,7 @@
     height: 180px;
     text-align: center;
     cursor: pointer;
+    border-radius: 50px;
 }
 .shortFeature.Heart{
     border: 1px solid rgb(209, 116, 131);
@@ -34,17 +39,118 @@
 .shortIcon{
     margin-top: 40px;
 }
-
+.detailFeatureMain{
+    width: 50vw;
+}
 .detailFeature{
-    border: 1px solid black;
+    border-radius: 0 50px 50px 0;
     scroll-margin-top: 100px;
+    margin: 10px;
+}
+.detailFeature.textLeft{
+    border-radius: 50px 0 0 50px;
+}
+.detailFeature.Heart{
+    background-color: rgb(253, 203, 211);
+    color: rgb(85, 12, 12);
+}
+.detailFeature.Sleep{
+    background-color: rgb(246, 222, 246);
+    color: rgb(209, 126, 126);
+}
+.detailFeature.Temperature{
+    background-color: rgb(221, 214, 214);
+    color: red;
+}
+.detailFeature.GPS{
+    background-color: rgb(227, 227, 110);
+    color: red;
 }
 .detailText{
     margin: 20px;
     font-size: 25px;
 }
-.detailImg{
-    background-color: white;
+div.detailImg{
     width: 30%;
-    border: 1px solid black;
+}
+Image.detialImg{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+@media (max-width: 900px){
+    .shortFeatureMain{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    .shortFeature{
+        width: 40%;
+        margin: 20px;
+        height: 200px;
+    }
+    .detailFeatureMain{
+        width: 90%;
+    }
+    .detailText{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .shortFeatureTitle{
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 600;
+        font: bold;
+    }
+    .shortFeatureMain{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+    .shortFeature{
+        border-radius: 100px;
+        width: 47%;
+        margin: 10px 0px;
+        height: 150px;
+    }
+    .shortIcon{
+        margin-top: 20px;
+    }
+    .detailFeatureMain{
+        width: 90%;
+    }
+    .detailFeature{
+        flex-direction: column;
+        background-color: rgb(255, 208, 150);
+    }
+    .detailFeature.textLeft{
+        flex-direction: column-reverse;
+        background-color: rgb(212, 254, 254);
+    }
+    .detailText{
+        width: 100%;
+        font-size: 20px;
+    }
+    div.detailImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    Image.detialImg{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .detailFeature.detailImg{
+        background-color: rgb(255, 208, 150);
+    }
+    .detailFeature.textLeft.detailImg{
+        justify-items: right;
+        background-color: rgb(212, 254, 254);
+    }
 }

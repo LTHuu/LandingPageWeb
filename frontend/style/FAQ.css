@@ -4,6 +4,7 @@
     font-weight: 600;
     margin-top: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* từng card FAQ */
@@ -28,7 +29,9 @@
 .Q{
     display:flex;
     align-items:center;
+    font-weight: 600;
     gap:15px;
+    color: black;
 }
 
 .icon{
@@ -45,6 +48,7 @@
 }
 .A{
     padding-left: 20px;
+    color: black;
 }
 .FAQForm{
     width: 100%;
@@ -135,4 +139,22 @@
 }
 .submitButton:active{
     transform: scale(0.98);
+}
+
+@media (max-width: 900px){
+    .faqTitle{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .faqTitle{
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }

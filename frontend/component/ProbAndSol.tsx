@@ -12,7 +12,7 @@ export default function ProbAndSol() {
                 <h1 className="ProbTitle">VẤN ĐỀ VÀ GIẢI PHÁP</h1>
                 <div className="ChatBox w-[70%] flex-col mt-5 border">
                     <div className="ProbName flex flex-row">
-                        <Image src={probAvatar} alt="" width={20} height={20}/>
+                        {/* <Image src={probAvatar} alt="" width={20} height={20}/> */}
                         <h1 className="pl-5 pb-1 pt-1">Problem</h1>
                     </div>
                     <div className="ProbChat">

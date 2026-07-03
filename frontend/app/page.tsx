@@ -46,7 +46,7 @@ export default function Home() {
       </header>
       <section id="home">
         <HeroSection />
-      </section>
+      </section> 
       <section id="feature">
         <Feature/>
       </section>
