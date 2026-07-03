@@ -59,12 +59,16 @@
 
 /* links */
 .footerLinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
 
 .footerLinks li{
     margin-bottom: 12px;
+    width: 50%;
 }
 
 .footerLinks a{
@@ -140,6 +144,12 @@
 
     .socials{
         justify-content: center;
+    }
+    .footerLinks{
+        flex-direction: column;
+    }
+    .footerLinks li{
+        width: unset;
     }
 }
 

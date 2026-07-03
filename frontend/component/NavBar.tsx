@@ -7,6 +7,7 @@ export default function NavBar(){
     const menuItem = [
         {name: "Home", section:"home", title:"chuyển đến home!"},
         {name: "Features",section:"feature", title:"chuyển đến Features!"},
+        {name: "Specifi",section:"specification", title:"chuyển đến Specification!"},
         {name: "Problem", section:"problem", title:"chuyển đến Problem!"},
         {name: "FAQ",section:"faq", title:"chuyển đến FAQ!"},
         {name: "Contact",section:"contact", title:"chuyển đến contact!"}

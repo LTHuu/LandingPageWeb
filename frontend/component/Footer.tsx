@@ -48,6 +48,7 @@ export default function Footer() {
                     <ul className="footerLinks">
                         <li><a title="Home" href="#home">Home</a></li>
                         <li><a title="Features" href="#feature">Features</a></li>
+                        <li><a title="Specification" href="#specifi">Specification</a></li>
                         <li><a title="Problem" href="#problem">Problem</a></li>
                         <li><a title="FAQ" href="#faq">FAQ</a></li>
                     </ul>

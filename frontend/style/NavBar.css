@@ -35,7 +35,6 @@
 }
 .nav-top-item:hover{
     /* background-color: rgb(10, 233, 233); */
-    border-radius: 8;
     font-size: 20;
 }
 
@@ -129,6 +128,12 @@
     .appName{
         visibility: hidden;
         display: none;
+    }
+
+    .nav-top-item:hover{
+        /* background-color: rgb(10, 233, 233); */
+        font-weight: bold;
+        font-size: 10px;
     }
     
 

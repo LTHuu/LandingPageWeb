@@ -6,6 +6,7 @@ import ProbAndSol from "@/component/ProbAndSol";
 import FAQ from "@/component/FAQ";
 import { useEffect, useState } from "react";
 import Footer from "@/component/Footer";
+import Sepcification from "@/component/Specification";
 
 
 export default function Home() {
@@ -48,6 +49,9 @@ export default function Home() {
       </section> 
       <section id="feature">
         <Feature/>
+      </section>
+      <section id="specifi">
+        <Sepcification/>
       </section>
       <section id="problem">
         <ProbAndSol/>

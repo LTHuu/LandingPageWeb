@@ -19,7 +19,7 @@ export default function FAQ() {
     ];
 
     const [formData, setFormData] = useState({
-        name: "",
+        email: "",
         question:""
     }
 
@@ -67,27 +67,27 @@ export default function FAQ() {
                     <form onSubmit={handleSubmit} className="questionForm">
 
                         <h2 className="formTitle">
-                            Gửi câu hỏi của bạn
+                            Đăng ký nhận tin
                         </h2>
 
                         <input
-                            type="text"
-                            title="Vui lòng cho biết tên của bạn!"
-                            placeholder="Tên của bạn"
+                            type="email"
+                            title="Vui lòng điền email để nhận thông tin!"
+                            placeholder="email của bạn..."
                             className="formInput"
-                            value={formData.name}
+                            value={formData.email}
                             onChange={(e) =>
                                 setFormData({
                                     ...formData,
-                                    name: e.target.value
+                                    email: e.target.value
                                 })
                             }
                             required
                         />
 
                         <textarea
-                            placeholder="Nhập câu hỏi tại đây..."
-                            title="Câu hỏi của bạn là gì!"
+                            placeholder="Nếu bạn có thắc mắc điền vào đây..."
+                            title="Thắc mắc của bạn là gì!"
                             className="formTextArea"
                             value={formData.question}
                             onChange={(e) =>
@@ -99,8 +99,8 @@ export default function FAQ() {
                             required
                         />
 
-                        <button title="Gửi câu hỏi!" type="submit" className="submitButton">
-                            Gửi câu hỏi
+                        <button title="Đăng ký!" type="submit" className="submitButton">
+                            Đăng ký
                         </button>
 
                     </form>
