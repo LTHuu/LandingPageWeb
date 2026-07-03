@@ -1,0 +1,159 @@
+.footer{
+    width: 100%;
+
+    margin-top: 100px;
+    padding-top: 60px;
+
+    background: linear-gradient(
+        180deg,
+        #ecfeff,
+        #dff8f7
+    );
+
+    border-top: 1px solid #d9eeee;
+}
+
+/* container */
+.footerContainer{
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+/* each block */
+.footerSection{
+    flex: 1;
+}
+
+/* logo */
+.footerLogo{
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #0f766e;
+
+    margin-bottom: 20px;
+}
+
+/* title */
+.footerTitle{
+    font-size: 22px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+    color: #134e4a;
+}
+
+/* text */
+.footerText{
+    line-height: 1.8;
+    color: #64748b;
+    max-width: 300px;
+}
+
+/* links */
+.footerLinks{
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li{
+    margin-bottom: 12px;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: #64748b;
+
+    transition: 0.25s;
+}
+
+.footerLinks a:hover{
+    color: #14b8a6;
+    padding-left: 6px;
+}
+
+/* social */
+.socials{
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.socials button{
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #14b8a6;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.socials button:hover{
+    transform: translateY(-3px);
+}
+
+/* bottom */
+.footerBottom{
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid #dbe7e7;
+
+    color: #64748b;
+}
+
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 900px){
+
+    .footerContainer{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footerSection{
+        text-align: center;
+    }
+
+    .footerText{
+        max-width: 100%;
+    }
+
+    .socials{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 500px){
+
+    .footer{
+        padding-top: 40px;
+    }
+
+    .footerLogo{
+        font-size: 26px;
+    }
+
+    .footerTitle{
+        font-size: 20px;
+    }
+
+}

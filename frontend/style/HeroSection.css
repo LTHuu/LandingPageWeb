@@ -1,0 +1,58 @@
+.topSection{
+    width: 70%;
+}
+.ProductInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productName{
+    font-size: 40;
+    font: bold;
+    text-align: left;
+}
+.proShort{
+    margin-left: 80px;
+    font-size: 20;
+    text-align: left;
+}
+.BuyButton{
+    width:150px;
+    height:50px;
+    margin: 20px;
+    background-color: green;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.BuyButton:hover{
+    width:155px;
+    height:50px;
+    font: bold;
+    font-size: 25px;
+}
+.productRate{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.TotalRate{
+    text-align: left;
+}
+.RatePositive{
+    text-align: right;
+}
+.Star{
+    font-size: 30px;
+    color: rgb(255, 255, 144);
+}
+.RateStar{
+    width: 80%;
+}
+.productIma{
+    background-color: white;
+}

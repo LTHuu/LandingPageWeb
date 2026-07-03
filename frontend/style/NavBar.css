@@ -1,0 +1,31 @@
+.topPage{
+    color: white;
+    height: 40px;
+    font-size: 20;
+    font:bold;
+    border: 1px solid black;
+}
+.navBar{
+    padding-bottom:20px;
+}
+/* Logo */
+.logo{
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+/* nav-top-item */
+.nav-top-item {
+    padding:10px;
+    margin: 0 10px;
+    text-align: center;
+    color: gray;
+    font-size: 15;
+
+    transition: 0.3s;
+}
+.nav-top-item:hover{
+    /* background-color: rgb(10, 233, 233); */
+    border-radius: 8;
+    font-size: 20;
+}

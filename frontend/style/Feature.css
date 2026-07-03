@@ -1,0 +1,50 @@
+.shortFeatureTitle{
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 600;
+    font: bold;
+}
+.shortFeature{
+    margin: 0 20px 20px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+.shortFeature.Heart{
+    border: 1px solid rgb(209, 116, 131);
+    background-color: rgb(253, 203, 211);
+    color: rgb(85, 12, 12);
+}
+.shortFeature.Sleep{
+    border: 1px solid rgb(151, 114, 151);
+    background-color: rgb(246, 222, 246);
+    color: rgb(209, 126, 126);
+}
+.shortFeature.Temperature{
+    border: 1px solid gray;
+    background-color: rgb(221, 214, 214);
+    color: red;
+}
+.shortFeature.GPS{
+    border: 1px solid rgb(112, 112, 56);
+    background-color: rgb(227, 227, 110);
+    color: red;
+}
+.shortIcon{
+    margin-top: 40px;
+}
+
+.detailFeature{
+    border: 1px solid black;
+    scroll-margin-top: 100px;
+}
+.detailText{
+    margin: 20px;
+    font-size: 25px;
+}
+.detailImg{
+    background-color: white;
+    width: 30%;
+    border: 1px solid black;
+}
