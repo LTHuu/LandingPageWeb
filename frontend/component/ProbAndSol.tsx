@@ -1,7 +1,6 @@
 'use client'
 import "../style/ProbAndSol.css"
 import Image from "next/image";
-import probAvatar from "../img/probAvatar.svg"
 
 // Chỉ ra các vấn đề về sức khỏe (ví dụ: nhịp tim, giấc ngủ) và cách đồng hồ của bạn giải quyết chúng.
 

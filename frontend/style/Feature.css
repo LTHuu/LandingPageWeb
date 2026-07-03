@@ -107,16 +107,16 @@ Image.detialImg{
         font: bold;
     }
     .shortFeatureMain{
-        width: 90%;
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0 30px;
     }
     .shortFeature{
         border-radius: 100px;
-        width: 47%;
+        width: 48%;
         margin: 10px 0px;
-        height: 150px;
+        height: 170px;
     }
     .shortIcon{
         margin-top: 20px;
@@ -133,7 +133,7 @@ Image.detialImg{
         background-color: rgb(212, 254, 254);
     }
     .detailText{
-        width: 100%;
+        width: 95%;
         font-size: 20px;
     }
     div.detailImg{

@@ -48,7 +48,7 @@ export default function FAQ() {
 
     return (
         <>
-            <div className="w-full flex flex-col items-center pb-10">
+            <div className="w-full flex flex-col items-center">
                 <h1 className="faqTitle">CÂU HỎI & GIẢI ĐÁP</h1>
                 <div className="w-[70%] flex-col mt-5">
                     {faqItem.map((item,index)=>(

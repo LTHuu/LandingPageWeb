@@ -3,7 +3,6 @@ import Image from "next/image";
 import ProductImg from "../img/HeathwatchFITVII.svg"
 import "../style/HeroSection.css"
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-import { Rowdies } from "next/font/google";
 // Hình ảnh sản phẩm sắc nét, slogan nhấn mạnh lợi ích (ví dụ: "Sức khỏe trong tầm tay"), và nút CTA rõ ràng (ví dụ: "Tìm hiểu thêm" hoặc "Mua ngay").
 
 export default function HeroSection() {
@@ -31,9 +30,9 @@ export default function HeroSection() {
             <div className="topSection flex justify-center items-center">
                 <div className="ProductInfo flex-2 flex-col items-center">
                     <div>
-                        <h1 className="productName Text">FITVII Health & Fitness Tracker</h1>
-                    <h2 className="proShort Text">Track your heart rate and sleep quality</h2>
-                    <h2 className="proShort Text">Monitor daily activity anytime, anywhere</h2>
+                        <h1 className="productName TextColor">FITVII Health & Fitness Tracker</h1>
+                    <h2 className="proShort TextColor">Track your heart rate and sleep quality</h2>
+                    <h2 className="proShort TextColor">Monitor daily activity anytime, anywhere</h2>
                     </div>
                     <div className="flex">
                         <div  className="productPrice">
@@ -47,18 +46,19 @@ export default function HeroSection() {
                     </div>
                     <div className="productRate flex flex-initial">
                         <div className="flex-1">
-                            <p className="TotalRate text-3xl  Text">12,6K</p>
-                            <p className="TotalRate font-bold  Text">Lượt đánh giá</p>
+                            <p className="TotalRate text-3xl  TextColor">12,6K</p>
+                            <p className="TotalRate font-bold  TextColor">Lượt đánh giá</p>
                         </div>
                         <div className="flex-1">
-                            <p className="RatePositive text-3xl Text">Hơn 9,8K</p>
-                            <p className="RatePositive font-bold Text">Lượt đánh tích cực</p>
+                            <p className="RatePositive text-3xl TextColor">Hơn 9,8K</p>
+                            <p className="RatePositive font-bold TextColor">Lượt đánh tích cực</p>
                         </div>
                     </div>
                     <div className="RateStar flex flex-row mt-4">
-                        <div className="flex">{renderStar()}</div>
-                        <div className="font-bold pl-5 pt-2 text-[15px]">
-                            <div className="ratingText Text">{rating} <p className="Text pl-5">Đánh giá trung bình của người dùng.</p></div>
+                        <div className="flex">{renderStar()}<p>{rating}</p></div>
+                        
+                        <div className="text-[15px]">
+                            <p className="ratingText">Đánh giá trung bình của người dùng.</p>
                         </div>
                     </div>
                 </div>

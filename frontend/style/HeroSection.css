@@ -6,7 +6,7 @@
     padding-bottom: 30px;
     width: 70%;
 }
-.Text{
+.TextColor{
     color: white;
 }
 .ProductInfo {
@@ -86,10 +86,16 @@
 .RateStar{
     width: 80%;
 }
-.ratingText{
-    display: flex;
+.RateStar p{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
 }
-.ratingText p.Text{
+.ratingText{
+    margin-left: 10px;
+    color:rgb(69, 154, 50);
+}
+.RateStar p.ratingText{
     color:rgb(69, 154, 50);
 }
 
@@ -133,7 +139,7 @@
 
 @media (max-width: 500px){
     .topSection{
-        width: 95%;
+        width: 100%;
         padding-top: 30px;
     }
     .productName{
@@ -196,9 +202,10 @@
         gap: 10px;
     }
     .RateStar p{
-        padding-left: 0 !important;
-        padding-top: 0 !important;
+        margin-top: 0;
+        margin-left: 0;
     }
+    
     .ProductImg{
         width: 220px !important;
         height: auto !important;

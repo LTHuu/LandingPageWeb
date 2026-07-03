@@ -6,8 +6,7 @@ import ProbAndSol from "@/component/ProbAndSol";
 import FAQ from "@/component/FAQ";
 import { useEffect, useState } from "react";
 import Footer from "@/component/Footer";
-// import FAQ from "../component/FAQ"
-// import Footer from "../component/Footer"
+
 
 export default function Home() {
   
