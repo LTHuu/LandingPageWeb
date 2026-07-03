@@ -29,25 +29,25 @@ export default function Feature() {
         <div className="w-full flex flex-col items-center pb-10">
             {/* <p className="shortFeatureTitle">Chức năng nổi bật</p> */}
             <div className="shortFeatureMain flex justify-between mt-10">
-                <div className="shortFeature Heart" onClick={() => scrollToSection(heartRef)}>
+                <div title="Heart Monitor" className="shortFeature Heart" onClick={() => scrollToSection(heartRef)}>
                     <h1 className="shortIcon">❤️</h1>
                     <h2>Heart Monitoring</h2>
                     <h2>Trach heart rate</h2>
                     <h2>in real time</h2>
                 </div>
-                <div className="shortFeature Sleep" onClick={() => scrollToSection(sleepRef)}>
+                <div title="Sleep Analysis" className="shortFeature Sleep" onClick={() => scrollToSection(sleepRef)}>
                     <h1 className="shortIcon">😴</h1>
                     <h2>Sleep Analysis</h2>
                     <h2>Monitor sleep cycles</h2>
                     <h2>for better recovery</h2>
                 </div>
-                <div className="shortFeature Temperature" onClick={() => scrollToSection(tempRef)}>
+                <div title="Temperature check" className="shortFeature Temperature" onClick={() => scrollToSection(tempRef)}>
                     <h1 className="shortIcon">🌡️</h1>
                     <h2>Temperature Check</h2>
                     <h2>Measure body temp</h2>
                     <h2>instantly</h2>
                 </div>
-                <div className="shortFeature GPS" onClick={() => scrollToSection(gpsRef)}>
+                <div title="GPS" className="shortFeature GPS" onClick={() => scrollToSection(gpsRef)}>
                     <h1 className="shortIcon">📍</h1>
                     <h2>GPS Emergency Alert</h2>
                     <h2>Share live location</h2>

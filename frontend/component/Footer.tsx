@@ -46,10 +46,10 @@ export default function Footer() {
                     </h3>
 
                     <ul className="footerLinks">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#feature">Features</a></li>
-                        <li><a href="#problem">Problem</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a title="Home" href="#home">Home</a></li>
+                        <li><a title="Features" href="#feature">Features</a></li>
+                        <li><a title="Problem" href="#problem">Problem</a></li>
+                        <li><a title="FAQ" href="#faq">FAQ</a></li>
                     </ul>
 
                 </div>
@@ -69,9 +69,9 @@ export default function Footer() {
 
                     <div className="socials">
 
-                        <button>FB</button>
-                        <button>IG</button>
-                        <button>YT</button>
+                        <button title="facebook">FB</button>
+                        <button title="Instagram">IG</button>
+                        <button title="Yoututbe">YT</button>
 
                     </div>
 

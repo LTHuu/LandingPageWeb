@@ -72,6 +72,7 @@ export default function FAQ() {
 
                         <input
                             type="text"
+                            title="Vui lòng cho biết tên của bạn!"
                             placeholder="Tên của bạn"
                             className="formInput"
                             value={formData.name}
@@ -86,6 +87,7 @@ export default function FAQ() {
 
                         <textarea
                             placeholder="Nhập câu hỏi tại đây..."
+                            title="Câu hỏi của bạn là gì!"
                             className="formTextArea"
                             value={formData.question}
                             onChange={(e) =>
@@ -97,7 +99,7 @@ export default function FAQ() {
                             required
                         />
 
-                        <button type="submit" className="submitButton">
+                        <button title="Gửi câu hỏi!" type="submit" className="submitButton">
                             Gửi câu hỏi
                         </button>
 
