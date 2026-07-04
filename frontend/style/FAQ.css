@@ -1,0 +1,160 @@
+
+.faqTitle{
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* từng card FAQ */
+.FAQ{
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    padding: 22px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* hover */
+.FAQ:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.Q{
+    display:flex;
+    align-items:center;
+    font-weight: 600;
+    gap:15px;
+    color: black;
+}
+
+.icon{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#14b8a6;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:bold;
+}
+.A{
+    padding-left: 20px;
+    color: black;
+}
+.FAQForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.questionForm{
+    width: 650px;
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 1px solid #e8eef5;
+}
+.formTitle{
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+.formInput,
+.formTextArea{
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border: 1px solid #d6dce5;
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.25s;
+}
+.formTextArea{
+    min-height: 180px;
+    resize: none;
+}
+
+/* focus */
+.formInput:focus,
+.formTextArea:focus{
+    border-color: #14b8a6; /* teal */
+
+    box-shadow: 0 0 0 4px rgba(20,184,166,0.15);
+}
+.formInput::placeholder,
+.formTextArea::placeholder{
+    color: #9aa3af;
+}
+.submitButton{
+    width: 180px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #14b8a6,
+        #0d9488
+    );
+
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.submitButton:hover{
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(20,184,166,0.25);
+}
+.submitButton:active{
+    transform: scale(0.98);
+}
+
+@media (max-width: 900px){
+    .faqTitle{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .faqTitle{
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}

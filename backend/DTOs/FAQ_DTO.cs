@@ -1,0 +1,9 @@
+﻿namespace backend.DTOs
+{
+    public class FAQ_DTO
+    {
+        public int Id { get; set; }
+        public string QuestionText { get; set; }
+        public string AnswerText { get; set; }
+    }
+}
