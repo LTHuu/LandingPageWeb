@@ -103,7 +103,7 @@
 .formInput:focus,
 .formTextArea:focus{
     border-color: #14b8a6; /* teal */
-
+    color: black;
     box-shadow: 0 0 0 4px rgba(20,184,166,0.15);
 }
 .formInput::placeholder,
