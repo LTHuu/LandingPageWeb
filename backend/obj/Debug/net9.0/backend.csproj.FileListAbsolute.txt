@@ -117,7 +117,6 @@ D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\staticwebassets.build.json.ca
 D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\staticwebassets.development.json
 D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\staticwebassets.build.endpoints.json
 D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\swae.build.ex.cache
-D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\backend.csproj.Up2Date
 D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\backend.dll
 D:\Project\LandingPageWeb\backend\obj\Debug\net9.0\refint\backend.dll

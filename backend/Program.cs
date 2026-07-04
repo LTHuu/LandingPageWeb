@@ -35,10 +35,15 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+var enableSwagger = app.Configuration.GetValue("EnableSwagger", true);
+if (enableSwagger)
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "backend v1");
+    });
+    app.MapGet("/swagger", () => Results.Redirect("/swagger/index.html"));
 }
 
 app.UseHttpsRedirection();
