@@ -16,6 +16,8 @@ export default function FAQ() {
         question: string
     }
 
+    const url = "https://landingpageweb.onrender.com";
+
     const [formData, setFormData] = useState<UserSubmit>({
         email: "",
         question:""
@@ -24,7 +26,7 @@ export default function FAQ() {
     useEffect(()=>{
         const fetchFAQs = async () =>{
             try{
-                const response = await fetch("https://localhost:7278/api/FAQ/getAll");
+                const response = await fetch(url+"/api/FAQ/getAll");
 
                 if(!response.ok){
                     throw new Error("Không lấy được dữ liệu!");
@@ -42,7 +44,7 @@ export default function FAQ() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
         try{
-            const response = await fetch("https://localhost:7278/api/Submit/create",{
+            const response = await fetch(url+"/api/Submit/create",{
                 method:'POST',
                 headers:{
                     'Content-Type': 'application/json',
