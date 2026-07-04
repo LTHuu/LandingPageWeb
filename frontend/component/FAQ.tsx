@@ -26,6 +26,7 @@ export default function FAQ() {
     useEffect(()=>{
         const fetchFAQs = async () =>{
             try{
+                console.log("Start fetch"); 
                 const response = await fetch(url+"/api/FAQ/getAll");
 
                 if(!response.ok){
